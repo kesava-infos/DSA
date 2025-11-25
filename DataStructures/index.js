@@ -1,7 +1,7 @@
 import { SingleLinkedList } from "./LinkedList/singleLinkedList.js";
-import { Stack } from "./Stack/stack.js"
-import {Queue} from "./Queue/queue.js"
-
+import { Stack } from "./Stack/stack.js";
+import {Queue} from "./Queue/queue.js";
+import { BinarySearch } from "./BinarySearch/binarySearch.js";
 
 // Test Single Linked List
 let list1 = new SingleLinkedList();
@@ -35,3 +35,12 @@ arr3.forEach((val)=>{
 for (let i = 0; i < arr3.length; i++) {
     console.log(queue.deQueue())
 }
+
+
+// binary tree
+const binaryArr = [30, 10, 20, 40, 35];
+const binarySearchObj = new BinarySearch();
+binaryArr.forEach((item)=>{
+    binarySearchObj.createNode(item);
+})
+binarySearchObj.print();
